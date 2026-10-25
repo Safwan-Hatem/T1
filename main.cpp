@@ -6,11 +6,14 @@ using namespace std;
 #define ll long long
 #define int long long
 void solve() {
-    ofstream stu("Student.txt");
-    string name;
-    ll id,grade;
-    cin>>name>>id>>grade;
-    stu<<name<<' '<<id<<' '<<grade;
+    fstream fr("fruits.txt");
+    string a,b,c;
+    fr>>a>>b>>c;
+    fr.close();
+    ofstream fr2("fruits.txt");
+    fr2<<"Fresh Fruits";
+    fr2.close();
+
 }
 signed main() {
     ios_base::sync_with_stdio(false);
